@@ -1,1 +1,4 @@
 env/
+src/campus_waze/__pycache__/
+src/main/migrations/__pycache__/
+src/main/__pycache__/
