@@ -1,1 +1,57 @@
 test
+NOTES:
+    MAIN
+        Log in topright
+            sqlite3: name + email + password
+        Floors 
+            Floor 1
+                Last update:
+                Business Level:
+                Confidence: 
+            Floor 2
+            Floor 3
+            Floor 4
+            Floor 5
+        Current Streak
+
+
+load up to login screen
+like scientia
+go to capacity
+map of floor 1 immediately
+    option button with like
+    1 2 3 4 5
+each floor split into specific sections
+hover over location 
+    grow 
+    shows activity level
+    gives short description of colour
+    option to report
+leaderboard(?) most library visits this week?
+longest streaks
+your favourite library spots
+
+data needed:
+    maps of each floor 
+    activity level per floor (average over last 5 reports or last reports in x hours)
+        could do business*(1/time elapsed) so that older reports less necessary
+        and then after 2 hours reports expire
+    number of reports in last 2 hours
+
+
+    username + password + email
+
+
+backend file structure:
+    main.py ({flask: index (login), floors}, calculate activity level, calc confidence, )
+    accounts.py (logins, streaks)
+    db (users table, reports table)
+
+database design:
+    user(username:pk, password(hashed), email, listDays)
+    report(username:fk+ck, time: ck, location, business)
+    
+
+
+
+
